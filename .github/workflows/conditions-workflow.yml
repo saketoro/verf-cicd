@@ -2,7 +2,7 @@ name: Conditions Workflow
 on: push
 jobs:
   skip-or-run:
-    if: ${{github.actor == 'octocat'}}
+    if: ${{github.actor == 'saketoro'}}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This job runs only for octocat."
+      - run: echo "This job runs only for saketoro."
