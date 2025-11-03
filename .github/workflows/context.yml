@@ -1,7 +1,7 @@
 name: Context
-on:workflow_dispatch
+on: workflow_dispatch
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{github.actor}}"
+      - run: echo "${{ github.actor }}"
