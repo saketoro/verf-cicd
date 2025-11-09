@@ -1,0 +1,14 @@
+name: Multi Dimension Matrix
+on: push
+jobs:
+  print:
+    strategy:
+      matrix:
+        OS: [ubuntu-latest, macos-latest]
+        VERSION: [18, 20]
+    runs-on: ${{ matrix.OS }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          node-version: ${{ matrix.VERSION }}
+      - run: echo "${RUNNER_OS}" && node --version
