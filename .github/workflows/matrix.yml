@@ -7,5 +7,5 @@ jobs:
         OS: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.OS }}
     steps:
-      - run: echo "${{RUNNER_OS}}"
+      - run: echo "${RUNNER_OS}"
         shell: bash
