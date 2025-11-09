@@ -1,0 +1,15 @@
+name: Parallel Jobs
+on: push
+jobs:
+  first_job:
+    runs-on: ubuntu-latest 
+    steps:
+      - run: sleep 10 && echo "Job 1 completed"
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10 && echo "Job 2 completed"
+  third_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10 && echo "Job 3 completed"
